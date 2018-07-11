@@ -1,0 +1,20 @@
+2-1. Regular Expressions
+
+1.Regular expressions:
+a. Disjunctions ([])
+b. Negative in disjunction (^)
+c. Pipe (|)
+d. Anchors (^, $)
+
+2. Error
+a. False positives:
+ - matching string that we should not have matched
+ -> increasing accuracy or precision
+b. False negatives
+ - not matching things that we should have matched
+ -> increasing coverage or recall
+ 
+ 
+ 2-2. Word Tokenization
+ 
+ 
