@@ -15,6 +15,40 @@ b. False negatives
  -> increasing coverage or recall
  
  
- 2-2. Word Tokenization
+ 2-2. Word Tokenization 斷詞
  
+1. Text
+a. Lemma
+ - same stem, part of speech, rough word sense
+ Ex. cat and cats are the same lemma
+b. Wordform
+ - the full inflected surface form
+c. Type (字元)
+ - an element of the vocabulary
+d. Token
+ - an instance of that type in running text
  
+2. Word Segmentation (Mazimum matching)
+a. Start a pointer at the beginning of the string
+b. Find the longest word in dictionary that matches the string staring at pointer
+c. Move the pointer over the word in string
+d. Go to b.
+
+3. Information Retrieval 資訊檢索
+a. Normalization (rule-based)
+ - reduce all letters to lower case
+ - deleting periods in a term
+b. Lemmatization
+ - reduce inflections or variant forms to base form
+c. Stemming
+ - reduce terms to their stems 
+ - crude chopping of affixes
+ - Porter's alorithm (most common English stemmer)
+ 
+<Remark> Simple Tokenization in UNIX
+1. Tokenizing:
+ tr -sc 'A-Za-z' '\n' < xxx.txt | head
+2. Sorting:
+ tr -sc 'A-Za-z' '\n' < xxx.txt | sort | head
+3. Merging upper and lower case
+ tr 'A-Z' 'a-z' < xxx.txt |  tr -sc 'A-Za-z' '\n' | sort | uniq -c | sort -n -r 
