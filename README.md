@@ -1,5 +1,5 @@
 # Speech_and_Language_Processing
 
-Reference: Dan Jurafsky
-Speech and Language Processing (3rd ed. draft)
+Reference: 
+Speech and Language Processing (3rd ed. draft), Dan Jurafsky
 https://web.stanford.edu/~jurafsky/slp3/
