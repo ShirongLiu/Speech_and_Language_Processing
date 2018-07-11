@@ -1,7 +1,5 @@
 # Speech_and_Language_Processing
 
-Chapter 2. Basic text processing
-
-2-2. Regular Rxpressions
-
-
+Reference: Dan Jurafsky
+Speech and Language Processing (3rd ed. draft)
+https://web.stanford.edu/~jurafsky/slp3/
